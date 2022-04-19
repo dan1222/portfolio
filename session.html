@@ -1,0 +1,39 @@
+<html>
+<head>
+<style>
+    body{
+        background:radial-gradient(blue,green);
+        color:white;
+        text-align:center;
+    }
+
+    input{
+    padding:10px;
+    margin-bottom:10px;
+    background-color:orange;
+}
+</style>
+</head>
+<body>
+<h1>multiplication table</h1>
+<input id="number" type="text"placeholder="Enter the number">
+<input id="multiple" type="text"placeholder="Enter the multiple"><br>
+<input class="btn"type="button" value="Genarte" onclick="Multiply()">
+<h4 id="display"></h4>
+</body>
+<script>
+function Multiply(){
+    var number = document.getElementById("number").value;
+    var multiple = document.getElementById("multiple").value;
+    var display = document.getElementById("display");
+
+var count  = 1;
+
+while(count<=multiple){
+    var product = number*count;
+    var element
+}
+    display.innerText=(number*multiple);
+}
+</script>
+</html>
