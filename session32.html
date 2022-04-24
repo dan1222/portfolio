@@ -1,0 +1,62 @@
+<html>
+<head>
+    <style>
+     body{
+         background:linear-gradient(green,lightgreen);
+         color:white;
+         text-align:center;
+     }
+     #container{
+            margin: top 100px;
+            width: 300px;
+            height: 300px;
+            border:1px solid white;
+            background-color:red;
+            animation-name:animation1;
+            animation-duration:8s;
+            animation-delay:5s;
+        }
+
+        @keyframes animation1{
+            0%{
+                background-color:red;
+            }
+            25%{
+                background-color:blue;
+                border-radius:50%;
+                margin-left:300px;
+            }
+            75%{
+              background-color: purple;
+            } 
+              100%{
+                   background-color:yellow;
+              }
+                     }
+
+            
+          @keyframes animation2{
+              from{
+                  color:yellow;
+              }
+              to{
+                  color:green;
+              }
+                }           
+
+                h1{
+                    margin: top 20px;
+                    animation-name:animation2;
+                    animation-duration:3s;
+                    animation-iteration-count:3;
+                    animation-direction:alternate;
+                    animation-delay: 5s;
+                }
+     
+    </style>
+</head>
+<body>
+<h1>Animations and transitions<h1>
+    <div id="container"></div>
+</body>
+</html>

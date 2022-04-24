@@ -1,0 +1,41 @@
+<html>
+<head>
+<style>
+    body{
+        background:linear-gradient(yellow,orange,red);
+        color:blue;
+        text-align:center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    </style>
+</head>
+<body>
+<h1>JS events</h1>
+<h2>1.onclick</h2>
+<h2>2.onmouseover</h2>
+<h2>3.onmouseleave</h2>
+<button onclick="onClick()">Click Me</button>
+<img ondblclick="onDblClick()" onmouseover="onMouseOver()" src="ntml2.png">
+<p id="paragraph"></p>
+<input onkeypress="onKeyPress()" type="text">
+</body>
+<script>
+function onClick(){
+    alert("You have clicked on the button");
+}
+
+var p = document.getElementById("paragraph");
+
+function onMouseOver(){
+    p.innerText = "you have moved your mouse cusor over the image";
+}
+
+function onDblClick(){
+    alert("Double Clicked");
+}
+
+function onKeyPress(){
+    alert("you have pressed a key on your keyboard")
+}
+</script>
+</html>

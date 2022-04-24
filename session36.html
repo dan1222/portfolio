@@ -1,0 +1,66 @@
+<html>
+    <head>
+<style>
+    *{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    body{
+        background:linear-gradient(blue,purple);
+        color:white;
+        text-align:center;
+    }
+</style>
+    </head>
+    <body>
+ <h1>Exception handling and errors</h1>
+ <h2>14-04-22</h2>
+ <h3 id="display"><h3>
+    </body>
+    <script>
+       try
+       {
+        add(10+20);
+        var display = document.getElementById("display");
+        display.innerText = "There is no error";
+
+       } 
+       catch(err)
+       {
+        var display = document.getElementById("display");
+        display.innerText = err;
+       }
+
+       try{
+           var x = 10;
+
+           if(x == 10)
+           {
+             throw"The value of X is indeed 10";
+           }
+           else
+           {
+             throw "The value of X is not 10";
+             }
+            }
+             catch(err)
+             {
+             var display = document.getElementById("display");
+             display.innerText =err;
+             }
+       try{
+           var n = 5;
+           var name = n.toUpperCase();
+           display.innerText = name;
+       }
+       catch(err)
+       {
+        var display = document.getElementById("display");
+             display.innerText =err;
+       }
+
+       try{
+           eval('alert(HELLo")');
+       }
+    </script>
+</html>
