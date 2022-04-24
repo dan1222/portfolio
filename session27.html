@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        font-family:"quickksand,"cursive;
+    }
+
+    body{
+        color:white;
+        text-align:center;
+        background:linear-gradient(blue,green);
+    }
+
+    input{
+        padding: 20px;
+        margin: top 10px;
+    }
+</style>
+</head>
+<body>
+  <h1>local storage and session storage</h1> 
+  <input type="button" value="local storage" onclick="locStorage()"> 
+  <input type="button" value="session storage" onclick="sesStorage()"> 
+  <h2 id="session"></h2>
+  <h2 id="local"></h2>
+</body>
+<script>
+
+    function locStorage()
+    {
+     var displaylocal = document.getElementById("local")
+
+      if(localStorage.clickcount)
+      {
+          localStorage.clickcount = Number(localStorage.clickcount)+1;
+      }
+     else
+     {
+         localStorage.clickcount = 1;
+     }displaylocal.innerText ="The local storage button has been clicked" +localStorage.clickcount+"times";
+      
+    }
+      
+    
+
+    function sesStorage()
+    {
+        var displaysession = document.getElementById("local")
+
+if(sessionStorage.clickcount)
+{
+    sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+}
+else
+{
+   sessionStorage.clickcount = 1;
+}displaysession.innerText ="The session storage button has been clicked" +sessionStorage.clickcount+"times";
+    }
+    </script>
+</html>
